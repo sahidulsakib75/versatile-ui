@@ -1,11 +1,305 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B10A2-versatile-ui</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav display__flex items__center max__w">
+        <h3 class="logo-header color__accent">Fitness</h3>
+        <input type="checkbox" id="click" />
+        <label for="click" class="nav-icon"
+          ><i class="fa-solid fa-bars"></i
+        ></label>
+        <ul class="display__flex">
+          <li><a class="nav-home" href="">Home</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </nav>
+      <section class="hero-section display__flex max__w items__center m__top4">
+        <div class="hero-content">
+          <h1>
+            Get body in <br />
+            <span class="style-text">shape</span> & stay <br />
+            healthy
+          </h1>
+          <p class="m__top3">
+            A huge selection of health and fitness content, healthy recipes and
+            transformation stories to help you get fit and stay fit!
+          </p>
+          <div class="hero-btn m__top3">
+            <button class="btn btn__primary">
+              <span class="btn-fulltext">Join Club Now!</span>
+              <span class="btn-shorttext">Join Now!</span>
+            </button>
+            <button class="btn btn__secondary">Download App</button>
+          </div>
+        </div>
+        <div class="hero-image text__center">
+          <img src="images/Images 2.png" alt="" />
+          <div class="card card-1">
+            <h3>500+</h3>
+            <p>Free Workout Videos</p>
+          </div>
+          <div class="card card-2 display__flex items__center">
+           
+            <div>
+              <h3>350+</h3>
+              <p>Video tutorial</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <!-- ---------Change Your Habits -->
+      <section class="habit-section max__w m__section">
+        <div class="habit-content text__center">
+          <h2>Change Your Habits</h2>
+          <p>
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
+        </div>
+
+        <!-- habit-lists -->
+        <div class="habit-lists m__top5">
+          <div class="habit-item text__center">
+            <img src="images/image 2.png" alt="" />
+            <h3 class="m__top3">Movement</h3>
+            <p>Enhance flexibility and strength through daily activities</p>
+          </div>
+          <div class="habit-item text__center">
+            <img src="images/image 3.png" alt="" />
+            <h3 class="m__top3">Time</h3>
+            <p>Maximize workout efficiency with effective time management</p>
+          </div>
+          <div class="habit-item text__center">
+            <img src="images/image 4.png" alt="" />
+            <h3 class="m__top3">Practice</h3>
+            <p>Consistent exercise leads to lasting fitness habits</p>
+          </div>
+          <div class="habit-item text__center">
+            <img src="images/image 5.png" alt="" />
+            <h3 class="m__top3">Weight Loss</h3>
+            <p>Achieve your goals with steady, sustainable progress</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------card-section -->
+      <section class="card-section m__section max__w">
+        <div class="card-container display__flex items__center">
+          <div class="card-content">
+            <h2>
+              Run an Extra <br />
+              Mile Easily
+            </h2>
+            <p>
+              Boost your stamina and endurance by gradually increasing your
+              running distance. Enjoy the benefits of a healthier lifestyle with
+              minimal effort.
+            </p>
+            <button class="btn btn__primary card-btn">Join Now</button>
+          </div>
+          <div class="card-image">
+            <img src="images/run.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- ----------BMI Calculator -->
+      <section class="bmi-section m__section">
+        <div class="bmi-header-section max__w">
+          <h2>BMI Calculator</h2>
+          <p>
+            Quickly calculate your Body Mass Index to better understand your
+            health status and set realistic fitness goals.
+          </p>
+        </div>
+        <div class="bmi-calculator-form-container m__top8">
+          <div class="bmi-calculator-form max__w display__flex">
+            <div class="bmi-calculator">
+              <h3>BMI Calculator Chart</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>BMI</th>
+                    <th>Weight Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Below 18.5</td>
+                    <td>Underweight</td>
+                  </tr>
+                  <tr>
+                    <td>18.5 - 24.9</td>
+                    <td>Healthy</td>
+                  </tr>
+                  <tr>
+                    <td>25.0 - 29.9</td>
+                    <td>Overweight</td>
+                  </tr>
+                  <tr>
+                    <td>30.0 - and Above</td>
+                    <td>Obese</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="calculator-form">
+              <h3>Calculate your BMI</h3>
+              <p>
+                Easily determine your Body Mass Index to assess your health and
+                track your fitness progress.
+              </p>
+              <form class="bmi-form" action="">
+                <div class="form-grid display__flex m__top4">
+                  <input
+                    type="text"
+                    name="height"
+                    id="height"
+                    placeholder="Height/cm"
+                  />
+                  <input
+                    type="text"
+                    name="weight"
+                    id="weight"
+                    placeholder="Weight/kg"
+                  />
+                  <input type="text" name="age" id="age" placeholder="Age" />
+                  <select name="sex" id="sex">
+                    <option value="" disabled selected hidden>Sex</option>
+                    <option class="option" value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+                <div class="form-column">
+                  <select name="activity" id="activity">
+                    <option class="option" value="" disabled selected hidden>
+                      Select an activity factor
+                    </option>
+                    <option value="Sedentary">Sedentary</option>
+                    <option value="lightly-active">Lightly active</option>
+                    <option value="lightly-active">Moderately active</option>
+                    <option value="lightly-active">Very active</option>
+                  </select>
+                  <input
+                    class="btn btn__primary form-btn-submit m__top3"
+                    type="submit"
+                    value="Calculate"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------Meet Our Team -->
+      <section class="team-section max__w text__center m__section">
+        <div class="team-content">
+          <h2>Meet Our Team</h2>
+          <p>
+            Get to know our dedicated team of fitness experts who are here to
+            guide, support, and inspire you on your wellness journey
+          </p>
+        </div>
+        <div class="team-trainers m__top5">
+          <div class="team-trainers-inner">
+            <div class="trainers">
+              <img src="images/trainer1.png" alt="" />
+              <div class="trainers-content">
+                <h3>Jerome Bell</h3>
+                <p>Trainer</p>
+              </div>
+            </div>
+            <div class="trainers">
+              <img src="images/trainer2.png" alt="" />
+              <div class="trainers-content">
+                <h3>Cameron Williamson</h3>
+                <p>Trainer</p>
+              </div>
+            </div>
+            <div class="trainers">
+              <img src="images/trainer3.png" alt="" />
+              <div class="trainers-content">
+                <h3>Darrell Steward</h3>
+                <p>Trainer</p>
+              </div>
+            </div>
+            <div class="trainers">
+              <img src="images/trainer4.png" alt="" />
+              <div class="trainers-content">
+                <h3>Dianne Russell</h3>
+                <p>Trainer</p>
+              </div>
+            </div>
+            <div class="trainers">
+              <img src="images/trainer5.png" alt="" />
+              <div class="trainers-content">
+                <h3>Cody Fisher</h3>
+                <p>Trainer</p>
+              </div>
+            </div>
+            <div class="trainers">
+              <img src="images/trainer6.png" alt="" />
+              <div class="trainers-content">
+                <h3>Theresa Webb</h3>
+                <p>Trainer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+    </main>
+    <footer class="footer m__top8">
+      <div class="footer-container display__flex max__w">
+        <div class="footer-logo-container">
+          <h3 class="logo-footer color__accent">Fitness</h3>
+          <p>
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym. With hundreds of
+            professional workouts.
+          </p>
+        </div>
+        <div class="quick-access display__flex">
+          <div class="footer__items">
+            <h3>Get Started</h3>
+            <ul>
+              <li><a href="">Service</a></li>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Affiliate Program</a></li>
+              <li><a href="">About Us</a></li>
+            </ul>
+          </div>
+          <div class="footer__items">
+            <h3>Get Started</h3>
+            <ul>
+              <li><a href="">Fitness</a></li>
+              <li><a href="">Platform</a></li>
+              <li><a href="">Workout Libary</a></li>
+              <li><a href="">App Design</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar max__w text__center">
+        <p>All right reserved @Fitness 2024</p>
+      </div>
+    </footer>
+  </body>
 </html>
