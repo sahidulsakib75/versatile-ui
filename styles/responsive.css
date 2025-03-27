@@ -1,0 +1,250 @@
+@media screen and (max-width: 576px) {
+
+    /* nav-icon */
+    .nav,
+    .hero-section {
+        margin: 0 2rem;
+    }
+
+    .hero-section {
+        margin-top: 5rem;
+    }
+
+    nav ul {
+        position: absolute;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 50vh;
+        margin: 1rem;
+        width: 95%;
+        top: 11rem;
+        left: -100%;
+        right: 0;
+        flex-direction: column;
+        justify-content: start;
+        transition: all 0.3s ease;
+        border-radius: .8rem;
+        background: rgba(19, 19, 19, 0.1);
+        z-index: 99999;
+        backdrop-filter: blur(20px);
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    nav ul li {
+        margin-top: 4rem;
+    }
+
+    /* Hero-section */
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 3.6rem;
+        margin-right: 10rem;
+        line-height: 4rem;
+    }
+
+    .style-text {
+        font-size: 6rem;
+    }
+
+    .hero-content p {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin-right: 8rem;
+    }
+
+    .btn {
+        /* padding: 1.6rem 3rem; */
+        padding: 0;
+        width: 16rem;
+        height: 5.5rem;
+    }
+
+    .btn-fulltext {
+        display: none;
+    }
+
+    .btn-shorttext {
+        display: inline;
+    }
+
+    .hero-image {
+        margin-top: 5rem;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .card-1 {
+        top: 4rem;
+        right: 0;
+    }
+
+    .card-1 h3 {
+        font-size: 3.5rem;
+    }
+
+    .card-1 p {
+        font-size: 1rem;
+    }
+
+    /* ------Change your habits */
+    .habit-section {
+        margin-top: 4rem;
+    }
+
+    .habit-content h2 {
+        font-size: 3rem;
+    }
+
+    .habit-content p {
+        margin: 1rem 4rem;
+    }
+
+    .habit-lists {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+
+    .habit-item p {
+        margin: .6rem 8rem;
+    }
+
+    /* Card-Section */
+    .card-section {
+        margin-top: 7rem;
+    }
+
+    .card-container {
+        flex-direction: column;
+        margin: 2rem;
+        padding: 3rem;
+    }
+
+    .card-content,
+    .card-image {
+        width: 100%;
+    }
+
+    .card-content h2 {
+        font-size: 3rem;
+    }
+
+    .card-content p {
+        margin: 2rem 2rem 2em 0;
+    }
+
+    .card-btn {
+        margin-bottom: 3rem;
+        width: 100%;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-image img {
+        transform: scale(1.5) translate(-30px, 15%);
+    }
+
+    /* BMI-Form */
+    .bmi-header-section {
+        margin: 2rem;
+    }
+
+    .bmi-header-section h2 {
+        font-size: 3rem;
+    }
+
+    .bmi-calculator-form-container {
+        margin-top: 4rem;
+    }
+
+    .bmi-calculator {
+        width: 100%;
+    }
+
+    .bmi-calculator-form {
+        flex-direction: column;
+    }
+
+    .bmi-calculator-form {
+        margin: 2rem;
+    }
+
+    .calculator-form {
+        margin: 5rem 0 0 0;
+        width: 100%;
+    }
+
+    .bmi-calculator h3,
+    .calculator-form h3 {
+        font-size: 2.5rem;
+    }
+
+    .form-grid {
+        width: 100%;
+        grid-template-columns: 49% 49%;
+        gap: 1rem;
+    }
+
+    /* Tem-section */
+    .team-section {
+        margin: 6.5rem 2rem 0 2rem;
+    }
+
+    .team-content h2 {
+        font-size: 3rem;
+    }
+
+    .team-trainers-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+
+    /* Footer  */
+    .footer {
+        padding-top: 4rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        margin-inline: 2rem;
+    }
+
+    .footer-logo-container {
+        width: 100%;
+    }
+
+    .logo-footer {
+        font-size: 7rem;
+    }
+
+    .quick-access {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer__items {
+        margin-top: 3rem;
+    }
+
+    .bottom-bar {
+        margin-inline: 2rem;
+    }
+}
